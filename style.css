@@ -1,0 +1,179 @@
+/* Set the background color and height for the CTA section */
+    .cta-section {
+      background-color: #98cdff;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    /* Style the overlay */
+.cta-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value for the overlay */
+  z-index: -1;
+}
+
+/* Style the overlay text */
+.cta-section .overlay-text {
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+    /* Style the main heading */
+    .cta-section h1 {
+      font-size: 36px;
+      color: #000000;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Style the call-to-action button */
+    .cta-button {
+      background-color: #4bb8eb;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      margin: 30px auto 0 auto; /* Add top margin to move button lower */
+      max-width: 250px; /* Make the button less wide */
+      width: auto; /* Prevent stretching */
+      border-radius: 5px;
+    }
+
+    /* Style the site header */
+    .site-header {
+      background-color: #222222;
+      padding: 5px;
+      text-align: center;
+      color: #cecdcd;
+    }
+
+    /* Style the site name */
+    .site-header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Set the background image, size, and position */
+    .cta-section {
+      background-image: url("img/cta-bg.jpg");
+      background-size: cover;
+      background-position: center;
+            background-color: #4ad0cc;
+      border: 2px solid #20bdbd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+/* Banner section with background image and overlay */
+.banner {
+  position: relative; /* Needed for overlay positioning */
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 275px; /* Shorter banner */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  display: block;
+}
+
+/* Light overlay to make the image very white and subtle */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.72); /* Almost fully white overlay */
+  z-index: 1;
+}
+
+/* Ensure banner content is above the overlay and remove background for text */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: #00334d; /* Dark text for contrast on white overlay */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: none;
+}
+
+/* Pet info section with two columns */
+.pet-info-section {
+  width: 80%; /* Center the section and keep it a good size */
+  margin: 30px auto;
+  overflow: hidden; /* Clear floats */
+  background-color: #eaf7fa; /* Light blue background */
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.pet-info-image {
+  float: left;
+  width: 48%;
+  max-width: 300px;
+  margin-right: 4%;
+  border-radius: 8px;
+  display: block;
+  margin-top: 20px; /* Move image down to help center vertically */
+}
+
+.pet-info-text {
+  float: left;
+  width: 48%;
+}
+
+.pet-info-text h2 {
+  color: #207fa1;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.pet-info-text p {
+  font-size: 16px;
+  color: #22505c;
+}
+
+/* Simple navigation bar styles */
+.main-nav {
+  background-color: #207fa1; /* Blue background */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-button {
+  display: inline-block;
+  background-color: #4bb8eb;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 22px;
+  margin: 0 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #207fa1;
+}
