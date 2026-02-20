@@ -1,3 +1,91 @@
+/* Newsletter Subscription Box Styles */
+
+#newsletter-section {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: relative;
+}
+
+.newsletter-cute-box {
+  background: #fff8e7;
+  border: 2px solid #FFC107;
+  border-radius: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1em 2em 1em 2em;
+  text-align: center;
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  min-width: 320px;
+  max-width: 100vw;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.newsletter-emoji {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  display: block;
+}
+
+#newsletter-form {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+#newsletter-email {
+  width: 220px;
+  max-width: 90vw;
+  padding: 0.6em 1em;
+  border: 1.5px solid #FFC107;
+  border-radius: 12px;
+  font-size: 1em;
+  background: #fff;
+  outline: none;
+  transition: border 0.2s;
+}
+#newsletter-email:focus {
+  border: 1.5px solid #FFC107;
+}
+
+#newsletter-form button {
+  background: linear-gradient(90deg, #FFC107 60%, #FFD600 100%);
+  color: #222;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,193,7,0.10);
+  transition: background 0.2s, transform 0.1s;
+}
+#newsletter-form button:hover {
+  background: linear-gradient(90deg, #FFD600 60%, #FFC107 100%);
+  color: #111;
+  transform: scale(1.05);
+}
+
+.newsletter-caption {
+  font-size: 0.9em;
+  color: #3d2c00;
+  margin-top: 0.2em;
+  margin-left: 0;
+  white-space: normal;
+}
 /* Set the background color and height for the CTA section */
     .cta-section {
       background-color: #98cdff;

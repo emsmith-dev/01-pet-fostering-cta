@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Pet Fostering</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS CDN for grid utilities -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header class="site-header">
@@ -24,6 +26,84 @@
     </div>
   </section>
 
+  <!-- Adoptable Pets Horizontal Scroll -->
+  <section class="w-full mt-8">
+    <h2 class="text-2xl font-bold mb-4 text-center">Meet Our Adoptable Pets</h2>
+    <div class="flex overflow-x-auto gap-6 px-4 pb-4" style="scroll-snap-type: x mandatory;">
+      <!-- Pet Card 1 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://place-puppy.com/200x200" alt="Bella the dog" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Bella</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 2 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-red-600 font-bold">N</span></div>
+        <div class="text-xs text-gray-500 text-center">Loves fetch and cuddles!</div>
+      </div>
+      <!-- Pet Card 2 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://placekitten.com/200/200" alt="Milo the cat" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Milo</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 1 year</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-green-600 font-bold">Y</span></div>
+        <div class="text-xs text-gray-500 text-center">Playful and gentle lap cat.</div>
+      </div>
+      <!-- Pet Card 3 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://place-puppy.com/201x200" alt="Rocky the dog" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Rocky</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 4 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-red-600 font-bold">N</span>, Good with cats: <span class="text-green-600 font-bold">Y</span></div>
+        <div class="text-xs text-gray-500 text-center">Energetic and loves walks.</div>
+      </div>
+      <!-- Pet Card 4 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://placekitten.com/201/200" alt="Luna the cat" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Luna</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 3 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-red-600 font-bold">N</span></div>
+        <div class="text-xs text-gray-500 text-center">Quiet, loves sunny spots.</div>
+      </div>
+      <!-- Pet Card 5 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://place-puppy.com/202x200" alt="Charlie the dog" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Charlie</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 5 months</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-green-600 font-bold">Y</span></div>
+        <div class="text-xs text-gray-500 text-center">Puppy energy, loves toys!</div>
+      </div>
+      <!-- Pet Card 6 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://placekitten.com/202/200" alt="Willow the cat" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Willow</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 6 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-red-600 font-bold">N</span>, Good with cats: <span class="text-green-600 font-bold">Y</span></div>
+        <div class="text-xs text-gray-500 text-center">Calm, loves window watching.</div>
+      </div>
+      <!-- Pet Card 7 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://place-puppy.com/203x200" alt="Max the dog" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Max</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 7 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-red-600 font-bold">N</span></div>
+        <div class="text-xs text-gray-500 text-center">Senior, very gentle and sweet.</div>
+      </div>
+      <!-- Pet Card 8 -->
+      <div class="min-w-[260px] max-w-xs bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center scroll-snap-align: start;">
+        <img src="https://placekitten.com/203/200" alt="Olive the cat" class="rounded-full w-32 h-32 object-cover mb-2">
+        <div class="font-semibold text-lg">Olive</div>
+        <div class="text-sm text-gray-600 mb-1">Age: 2 years</div>
+        <div class="text-xs text-gray-700 text-center mb-1">Good with kids: <span class="text-green-600 font-bold">Y</span>, Good with cats: <span class="text-green-600 font-bold">Y</span></div>
+        <div class="text-xs text-gray-500 text-center">Curious and playful explorer.</div>
+      </div>
+      <!-- See More Button Card -->
+      <div class="min-w-[180px] max-w-xs bg-gradient-to-br from-[#FFF9C4] to-[#FFC107] rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center justify-center scroll-snap-align: start;">
+        <button class="flex items-center gap-2 px-6 py-3 bg-[#FFC107] hover:bg-[#FFD600] text-black font-bold rounded-full text-lg shadow transition-colors duration-150" onclick="window.location.href='#'">
+          See More
+          <span class="inline-block text-2xl">→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <section class="pet-info-section">
     <img src="img/pet.jpg" alt="A happy foster pet" class="pet-info-image">
     <section class="pet-info-text">
@@ -31,5 +111,21 @@
       <p>Fostering gives animals a safe, loving place to stay while they wait for adoption. You help them learn to trust, grow, and get ready for their forever home. Even a short time in your care can change a pet’s life forever!</p>
     </section>
   </section>
+  <!-- Newsletter section moved to very bottom -->
+  <footer>
+    <section id="newsletter-section">
+      <div class="newsletter-cute-box">
+        <span class="newsletter-emoji">🐶💌🐱</span>
+        <h2>Subscribe to our Newsletter</h2>
+        <h3>Get the latest pet nutrition tips, adoption stories, and updates delivered to your inbox!</h3>
+        <form id="newsletter-form">
+          <input type="email" id="newsletter-email" name="newsletter-email" required placeholder="Your email address..." />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-caption">By subscribing, you agree to receive emails from PetQuest. You can unsubscribe at any time.</p>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,2 +1,1 @@
-# Build a Call to Action Banner
-To get started, create a new Codespace from this repo.
+A fictional agency promoting pet fostering. Javascript, HTML and CSS. My first project.
